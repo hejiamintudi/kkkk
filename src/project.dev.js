@@ -2086,7 +2086,6 @@ window.__require = function e(t, n, r) {
             }
           });
           var updateFun = dyl.update();
-          updateFun.\u66fe\u68e0 = self.\u66fe\u68e0++;
           var ii = 0;
           var color = role.color;
           var hurtNode = "en" === role.type ? role : hjm._heroDataLab;
@@ -2096,13 +2095,11 @@ window.__require = function e(t, n, r) {
             this.en = v.mul(10 / v.mag());
             this.spr = cc.color(255, 255, 255);
             var vv = ii++;
-            cc.log("\u66fe\u68e0", updateFun.\u66fe\u68e0, "start", vv);
             updateFun(function(dt) {
               t -= dt;
               if (t >= 0) return true;
               _this.en = cc.v2(0, 0);
               _this.spr = color;
-              cc.log("\u66fe\u68e0", updateFun.\u66fe\u68e0, "end", vv);
               return false;
             });
           };
